@@ -30,8 +30,7 @@ def DocumentByName(name, compareMethod):
             objDoc = objWirecast.DocumentByIndex(name, compareMethod)
             return objDoc
     except:
-        #pass
-        print("Wirecast app not found.")
+        #print("Wirecast app not found.")
         return 0
 
 def DocumentByIndex(idx):
@@ -42,8 +41,7 @@ def DocumentByIndex(idx):
             objDoc = objWirecast.DocumentByIndex(idx)
             return objDoc
     except:
-        #pass
-        print("Wirecast app not found.")
+        #print("Wirecast app not found.")
         return 0
 
 #=======================================================
