@@ -27,7 +27,7 @@ def DocumentByName(name, compareMethod):
         pythoncom.CoInitialize() 
         objWirecast = win32com.client.GetActiveObject("Wirecast.Application")
         if objWirecast:
-            objDoc = objWirecast.DocumentByIndex(name, compareMethod)
+            objDoc = objWirecast.DocumentByName(name, compareMethod)
             return objDoc
     except:
         #print("Wirecast app not found.")
