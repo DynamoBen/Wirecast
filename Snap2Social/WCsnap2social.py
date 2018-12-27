@@ -44,7 +44,7 @@ def SaveSnapshot(pathString):                           # Gets snapshot image fr
             pass
     numList = sorted(numList)                           # Sort the list numerically
     newNum = numList[-1] + 1                            # Get the next number in the series    
-    saveName = 'snapshot_%04d.png' % newNum             # Determine next filename (IE snapshot_0001.png)
+    saveName = 'snapshot_%d.png' % newNum               # Determine next filename (IE snapshot_0001.png)
 
     objWirecast = win32com.client.Dispatch("Wirecast.Application") # Connect to Wirecast 
     if objWirecast:                                     # If successful...
